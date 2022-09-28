@@ -1,0 +1,152 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="It's a game, SHUT THE BOX" />
+    <link rel="icon" href="img/fevicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SHUT THE BOX</title>
+  </head>
+  <body>
+    <audio class="background-music">
+      <source src="audio/background-music.mp3" type="audio/mp3" />
+    </audio>
+    <!-- NAVIGATION BAR -->
+    <header class="navigation">
+      <button class="link home-page underline">HOME</button>
+      <button class="link game-page">GAME</button>
+      <button class="link rule-page">RULE</button>
+      <button class="link about-page">ABOUT</button>
+    </header>
+    <!-- HOME PAGE -->
+    <section class="home section">
+      <div class="container">
+        <img class="logo" src="img/SHUT-THE-BOX-LOGO.png" />
+        <button class="play button">LET'S START</button>
+      </div>
+    </section>
+    <!-- GAME PAGE -->
+    <section class="game section hidden">
+      <div class="container">
+        <div class="number-tiles">
+          <p class="tiles">1</p>
+          <p class="tiles">2</p>
+          <p class="tiles">3</p>
+          <p class="tiles">4</p>
+          <p class="tiles">5</p>
+          <p class="tiles">6</p>
+          <p class="tiles">7</p>
+          <p class="tiles">8</p>
+          <p class="tiles">9</p>
+        </div>
+        <div class="players">
+          <div class="player-1 score-card active-player">
+            <h1>PLAYER 1</h1>
+            <p class="score score-1">00</p>
+          </div>
+          <div class="dice">
+            <div class="dice-pad">
+              <img class="dice-1 d" src="img/dice-1.png" />
+              <img class="dice-2 d" src="img/dice-1.png" />
+            </div>
+            <button class="roll-dice button">ROLL</button>
+            <audio class="dice-rolled-audio">
+              <source src="audio/dice-roll.mp3" type="audio/mp3" />
+            </audio>
+          </div>
+          <div class="player-2 score-card">
+            <h1>PLAYER 2</h1>
+            <p class="score score-2">00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- RULE PAGE -->
+    <div class="rule hidden">
+      <h1>RULE</h1>
+      <button class="close">&times;</button>
+      <ul>
+        <li>
+          The object of the game SHUT THE BOX is to shut all boxes or obtain the
+          lowest score.
+        </li>
+        <li>
+          During each round, each player will take turns which consists of
+          multiple rolls to close as many boxes as possible (by clicking the
+          number box to close certain number). The player can choose up to any
+          combination or pattern in which they feel but maximum 3 box per roll.
+          The first player rolls both dice and counts the number of &r
+          &lsquo;pips&rsquo; (black dots) on the dice. Add the numbers on the
+          dice together. Using this total, the player can knock down or
+          &lsquo;close&rsquo; any combination of numbered box that add up to the
+          total. For example, if a player rolls a total 9, the player can choose
+          up to any of the following:<br />
+
+          9 || 8,1 || 6,3 || 5,4 || 4,2 & 3 || 4,1 & 4.
+        </li>
+        <li>
+          The first player continues to roll the dice until they can no longer
+          &lsquo;close&rsquo; an appropriate combination of numbers. If none of
+          the options are available to play and have been covered, then the
+          players turn is finished. Add up the numbers on the box that remain
+          &lsquo;open&rsquo;, and this is the first player&rsquo;s score. For
+          example, if the 1, 2, and 9 box are still &lsquo;open&rsquo;, the
+          player&rsquo;s score is 12.
+        </li>
+        <li>
+          When it is the second player&rsquo;s turn, all the boxes are opened
+          again, and the second player repeats the process of the game. The
+          round will continue untill at the end of round any one player score 45
+          or more, then the other player wins the game. If both player score
+          more then 45 at the end of the round then the player with lowest score
+          win.
+        </li>
+      </ul>
+    </div>
+    <!-- WINNER DECLARATION -->
+    <div class="winner hidden ">
+      <p class="player-win">Player-1 win!</p>
+      <button class="button restart">RESTART</button>
+    </div>
+    <!-- ABOUT PAGE -->
+    <section class="about hidden">
+      <div class="container">
+        <p>
+          Shut The Box is a simple dice game that requires more than sheer luck
+          with the throw of dice to win. The total value of the number of pips
+          on the dice corresponds to the total value of tiles a player can drop,
+          which brings in the element of arithmetic thinking and strategy to win
+          the game. With each tile, you drop, you inch closer to shutting the
+          box.<br /><br />
+          Although the history of Shut The Box lacks conclusive evidence,
+          tell-tales confirm it dates back to as long as the 12th century and
+          finds origins in France. Some theories also suggest that it was born
+          in the bars during the mid 20th century and the pubs of 1960s
+          Manchester are living proof of the same.<br /><br />
+          Hey guys, hope you enjoy this game . If you want the code of this game
+          its available on my gitHub porfile and if you want to follow me and my
+          work then do check my social media given below.<br /><br />
+          <div class="social-media">        
+            <a href="https://github.com/AmitChauhan-15"><img src="img/github.png" alt="icon of github" /></a>
+            <a href="https://www.linkedin.com/in/amit-chauhan2000/"><img src="img/linkdin.png" alt="icon of linkdin" /></a>
+            <a href="https://www.instagram.com/amitchauhan_2000"><img src="img/insta.png" alt="icon of instagram" /></a>
+          </div>
+        </p>
+      </div>
+      <footer class="footer"> 
+      <p>
+        &copy; copyright by Amit Chauhan.
+      </p>
+      </footer>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
