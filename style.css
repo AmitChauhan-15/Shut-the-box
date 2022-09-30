@@ -575,6 +575,10 @@ footer {
   .footer {
     transform: translateX(-100%);
   }
+
+  .winner {
+    width: 80vw;
+  }
 }
 
 /* BREAKPOINT 5 */
