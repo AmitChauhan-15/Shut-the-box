@@ -63,6 +63,10 @@ html {
   display: none;
 }
 
+.parent_div > * + * {
+  margin-left: 8rem;
+}
+
 /* color - #D9D1B8
            #F28705
            #F26D3D
