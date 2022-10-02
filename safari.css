@@ -10,7 +10,7 @@
   margin-bottom: 10rem;
 }
 
-.no-flexbox-gap .game .container:not(:last-child) {
+.no-flexbox-gap .game .container {
   margin-bottom: 10rem;
 }
 
@@ -39,7 +39,7 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  .no-flexbox-gap .container:not(:last-child) {
+  .no-flexbox-gap .container {
     margin-bottom: 15rem;
   }
 }
@@ -55,7 +55,7 @@
     margin-right: 15vw;
   }
 
-  .no-flexbox-gap .game .container:not(:last-child) {
+  .no-flexbox-gap .game .container {
     margin-bottom: 10vh;
   }
 
