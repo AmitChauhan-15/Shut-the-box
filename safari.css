@@ -10,6 +10,10 @@
   margin-bottom: 10rem;
 }
 
+.no-flexbox-gap .game .container:not(:last-child) {
+  margin-bottom: 10rem;
+}
+
 .no-flexbox-gap .dice:not(:last-child) {
   margin-bottom: 2rem;
 }
