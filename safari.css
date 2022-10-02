@@ -1,0 +1,61 @@
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .navigation button:not(:last-child) {
+  margin-right: 30rem;
+}
+
+.no-flexbox-gap .container:not(:last-child) {
+  margin-bottom: 10rem;
+}
+
+.no-flexbox-gap .dice:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .rule:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.no-flexbox-gap .winner:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* ********** RESPONSIVE DESIGN ********** */
+
+@media only screen and (max-width: 1440px) {
+  .no-flexbox-gap .game .container:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+
+  .no-flexbox-gap .rule:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .no-flexbox-gap .container:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .no-flexbox-gap .container:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1080px) and (orientation: portrait) {
+  .no-flexbox-gap .navigation button:not(:last-child) {
+    margin-right: 15vw;
+  }
+
+  .no-flexbox-gap .game .container:not(:last-child) {
+    margin-bottom: 10vh;
+  }
+
+  .no-flexbox-gap .dice:not(:last-child) {
+    margin-bottom: 10vw;
+  }
+}
