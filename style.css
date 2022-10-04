@@ -81,8 +81,11 @@ html {
   width: 100vw;
   display: flex;
   justify-content: center;
-  gap: 30rem;
   z-index: 1000;
+}
+
+.navigation :not(:last-child) {
+  margin-right: 15vw;
 }
 
 .link {
@@ -122,13 +125,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10rem;
 }
 
 .logo {
   max-width: 70rem;
   animation: pop 1.2s ease-in-out;
   overflow: hidden;
+  margin-bottom: 4vw;
 }
 
 .button {
@@ -175,6 +178,7 @@ html {
   justify-content: space-between;
   background: url(img/wooden-stick.png) center center no-repeat;
   background-size: 120%;
+  margin-bottom: 5vw;
 }
 
 .tiles {
@@ -253,7 +257,6 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
 }
 
 .dice-pad {
@@ -264,6 +267,7 @@ html {
   justify-content: space-around;
   background: url(img/dicepad.png) center center no-repeat;
   background-size: cover;
+  margin-bottom: 2.5rem;
 }
 
 .d {
@@ -291,8 +295,11 @@ html {
   background-color: #f26d3d;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
   z-index: 200;
+}
+
+.rule :not(:last-child) {
+  margin-bottom: 2vw;
 }
 
 .rule h1 {
@@ -353,12 +360,12 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
   z-index: 500;
 }
 
 .winner button {
   color: #f26d3d;
+  margin-top: 3vw;
   background-color: #403430;
 }
 
@@ -378,10 +385,6 @@ html {
   background-color: #d9d1b8;
   z-index: 105;
   overflow: hidden;
-}
-
-.about .container {
-  gap: 0rem;
 }
 
 .about p {
@@ -415,14 +418,6 @@ footer {
 /* BREAKPOINT 1 */
 
 @media only screen and (max-width: 1440px) {
-  .game .container {
-    gap: 15rem;
-  }
-
-  .rule {
-    gap: 1rem;
-  }
-
   .rule li {
     font-size: 2.8rem;
   }
@@ -433,9 +428,6 @@ footer {
 @media only screen and (max-width: 1366px) {
   html {
     font-size: 55%;
-  }
-  .container {
-    gap: 5rem;
   }
 }
 
@@ -448,7 +440,6 @@ footer {
 
   .container {
     top: 45%;
-    gap: 3rem;
   }
 
   .game .container {
@@ -478,7 +469,6 @@ footer {
 @media (max-width: 1080px) and (orientation: portrait) {
   .navigation {
     top: 3%;
-    gap: 15vw;
   }
 
   .link {
@@ -487,7 +477,6 @@ footer {
 
   .container {
     top: 55%;
-    gap: 10vh;
   }
 
   .logo {
@@ -507,6 +496,7 @@ footer {
 
   .number-tiles {
     font-size: 9.5vw;
+    margin-bottom: 10vw;
   }
 
   .tiles {
@@ -519,7 +509,6 @@ footer {
     bottom: -75%;
     left: 50%;
     transform: translateX(-50%);
-    gap: 10vw;
   }
 
   .score-card {
@@ -543,6 +532,10 @@ footer {
   .dice-pad {
     width: 75vw;
     height: 24vw;
+  }
+
+  .rule {
+    height: 80vh;
   }
 
   .rule h1 {
